@@ -136,8 +136,8 @@ function speakFlashcard() {
 }
 
 // ===== МИНИ-ТЕСТ =====
-let quizCards = [];
 let currentQuiz = {};
+let quizCards = [];
 
 async function loadQuizCards() {
   const res = await fetch("data/flashcards.json");
@@ -182,54 +182,4 @@ function nextQuiz() {
     };
     quizOptionsElement.appendChild(btn);
   });
-}
-
-// ===== ПРОГРЕСС =====
-function updateProgress() {
-  const flash = localStorage.getItem("flashcardCount") || 0;
-  const words = localStorage.getItem("wordsCount") || 0;
-  const phrases = localStorage.getItem("phrasesCount") || 0;
-
-  document.getElementById("flashcardsCount").innerText = flash;
-  document.getElementById("wordsCount").innerText = words;
-  document.getElementById("phrasesCount").innerText = phrases;
-
-  const total = parseInt(flash) + parseInt(words) + parseInt(phrases);
-  const mot = document.getElementById("motivation");
-  if (total >= 50) mot.innerText = "🔥 Ты — машина! Продолжай!";
-  else if (total >= 20) mot.innerText = "🚀 Уже отличный прогресс!";
-  else if (total >= 5) mot.innerText = "👍 Хорошее начало!";
-  else mot.innerText = "Начни с первого шага — ты сможешь 💜";
-}
-
-function resetProgress() {
-  localStorage.removeItem("flashcardCount");
-  localStorage.removeItem("wordsCount");
-  localStorage.removeItem("phrasesCount");
-  updateProgress();
-}
-
-// ===== АВТО-ЗАПУСК НА СТРАНИЦАХ =====
-if (window.location.pathname.includes("word.html")) {
-  loadWord();
-  let c = parseInt(localStorage.getItem("wordsCount") || 0);
-  localStorage.setItem("wordsCount", c + 1);
-}
-
-if (window.location.pathname.includes("phrase.html")) {
-  loadPhrase();
-  let c = parseInt(localStorage.getItem("phrasesCount") || 0);
-  localStorage.setItem("phrasesCount", c + 1);
-}
-
-if (window.location.pathname.includes("flashcards.html")) {
-  loadFlashcards();
-}
-
-if (window.location.pathname.includes("quiz.html")) {
-  loadQuizCards();
-}
-
-if (window.location.pathname.includes("progress.html")) {
-  updateProgress();
 }

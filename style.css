@@ -92,8 +92,8 @@ body.light-theme footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 20px;
-  padding: 40px 20px;
-  max-width: 880px;
+  padding: 20px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -104,7 +104,7 @@ body.light-theme footer {
   border-radius: 14px;
   text-align: center;
   padding: 25px 15px;
-  font-size: 20px;
+  font-size: 26px;
   color: #fff;
   text-decoration: none;
   box-shadow: 0 0 15px rgba(130, 88, 250, 0.3);
@@ -114,42 +114,25 @@ body.light-theme footer {
   align-items: center;
 }
 
+.menu-btn span {
+  margin-top: 8px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
 .menu-btn:hover {
   background: rgba(130, 88, 250, 0.3);
   box-shadow: 0 0 25px rgba(130, 88, 250, 0.5);
   transform: scale(1.05);
 }
 
-.menu-btn span {
-  margin-top: 8px;
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-/* === ПОДВАЛ === */
-footer {
-  margin-top: auto;
-  text-align: center;
-  background-color: rgba(30, 30, 47, 0.85);
-  padding: 25px 20px;
-  font-size: 14px;
-  color: #aaa;
-  border-top: 1px solid #444;
-}
-
-/* === МОБИЛЬНАЯ АДАПТАЦИЯ === */
+/* Mobile-friendly adjustments */
 @media screen and (max-width: 600px) {
-  .site-header h1 {
+  .menu-btn {
+    padding: 20px 10px;
     font-size: 22px;
   }
-
-  .menu-grid {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    padding: 20px;
-  }
-
-  #theme-toggle {
+  .menu-btn span {
     font-size: 14px;
-    padding: 8px 12px;
   }
 }

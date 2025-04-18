@@ -1,0 +1,17 @@
+[
+  {
+    "word": "deploy",
+    "translation": "развернуть (программу на сервере)",
+    "example": "We need to deploy the app today."
+  },
+  {
+    "word": "bug",
+    "translation": "ошибка в коде",
+    "example": "There's a bug in the login function."
+  },
+  {
+    "word": "commit",
+    "translation": "фиксировать изменения",
+    "example": "Don't forget to commit your changes."
+  }
+]

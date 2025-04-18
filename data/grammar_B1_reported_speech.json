@@ -1,0 +1,22 @@
+{
+  "grammar": "Reported Speech",
+  "explanation": "Используется для передачи чужих слов. Времена сдвигаются назад.",
+  "structure": "He said (that) + subject + verb (прошедшая форма)",
+  "examples": [
+    "She said that she was tired.",
+    "He told me that he would call later.",
+    "They said they had finished the task."
+  ],
+  "quiz": [
+    {
+      "question": "He said, 'I'm working.' → He said he ___ working.",
+      "options": ["was", "is", "will be"],
+      "answer": "was"
+    },
+    {
+      "question": "She said, 'I have finished.' → She said she ___ finished.",
+      "options": ["had", "has", "have"],
+      "answer": "had"
+    }
+  ]
+}

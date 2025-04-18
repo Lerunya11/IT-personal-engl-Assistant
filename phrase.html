@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🧠 Фраза дня — IT-English</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero-header">
+      <img src="images/library-2.jpeg" alt="Library" class="header-bg" />
+      <div class="hero-header-content">
+        <h1>🧠 Фраза дня</h1>
+        <nav class="hero-nav">
+          <a href="index.html">🏠 Домой</a>
+          <a href="word.html">🎯 Слово дня</a>
+          <a href="flashcards.html">📝 Карточки</a>
+          <a href="topics.html">📚 Темы</a>
+          <a href="quiz.html">🧩 Тест</a>
+          <a href="grammar.html">📘 Грамматика</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <img
+        src="images/dictionary-lila.jpg"
+        alt="Dictionary"
+        class="side-image"
+      />
+
+      <div class="card" id="phrase-card">
+        <h2 id="phrase">Загрузка...</h2>
+        <p id="translation"></p>
+        <p id="example" class="example"></p>
+
+        <div class="actions">
+          <button onclick="speakPhrase()">🔊 Озвучить</button>
+          <button onclick="nextPhrase()">➡️ Следующая фраза</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>🗣️ Одна фраза в день — и ты свободно говоришь по-английски!</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

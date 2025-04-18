@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🧩 Мини-тест — IT-English</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero-header">
+      <img
+        src="images/library-2.jpeg"
+        alt="Library Background"
+        class="header-bg"
+      />
+      <div class="hero-header-content">
+        <h1>🧩 Мини-тест: угадай перевод</h1>
+        <nav class="hero-nav">
+          <a href="index.html">🏠 Домой</a>
+          <a href="word.html">🎯 Слово дня</a>
+          <a href="phrase.html">🧠 Фраза дня</a>
+          <a href="flashcards.html">📝 Карточки</a>
+          <a href="topics.html">📚 Темы</a>
+          <a href="grammar.html">📘 Грамматика</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="card">
+        <h2 id="quizWord">Загрузка...</h2>
+        <div id="quizOptions" class="quiz-options"></div>
+        <p id="quizResult" class="result"></p>
+        <button onclick="nextQuiz()">➡️ Следующий вопрос</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>🌟 Тренируйся каждый день — и словарь вырастет! 📈</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

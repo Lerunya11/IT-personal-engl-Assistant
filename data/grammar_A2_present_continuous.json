@@ -1,0 +1,18 @@
+{
+  "grammar": "Present Continuous",
+  "explanation": "Используется для описания действий, происходящих прямо сейчас.",
+  "structure": "Subject + am/is/are + Verb-ing",
+  "examples": ["She is writing code.", "We are testing the app."],
+  "quiz": [
+    {
+      "question": "They ___ working on a new project.",
+      "options": ["is", "are", "am"],
+      "answer": "are"
+    },
+    {
+      "question": "I ___ learning JavaScript.",
+      "options": ["am", "is", "are"],
+      "answer": "am"
+    }
+  ]
+}

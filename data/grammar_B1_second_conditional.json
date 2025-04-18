@@ -1,0 +1,22 @@
+{
+  "grammar": "Second Conditional",
+  "explanation": "Выражает маловероятные или гипотетические ситуации.",
+  "structure": "If + past simple, would + base verb",
+  "examples": [
+    "If I had more time, I would learn JavaScript.",
+    "She would call if she knew.",
+    "If we worked faster, we would finish early."
+  ],
+  "quiz": [
+    {
+      "question": "If he ___ (be) here, he would help.",
+      "options": ["was", "were", "is"],
+      "answer": "were"
+    },
+    {
+      "question": "I ___ (go) if I had a car.",
+      "options": ["would go", "go", "went"],
+      "answer": "would go"
+    }
+  ]
+}

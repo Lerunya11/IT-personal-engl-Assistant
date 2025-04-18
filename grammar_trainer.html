@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Грамматический тренажёр — IT-English Assistant</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      #grammar-content {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        background-color: #2e2e3e;
+        border-radius: 10px;
+        color: #f1f1f1;
+      }
+
+      #grammar-content h2 {
+        color: #ffc857;
+        text-align: center;
+      }
+
+      #grammar-content pre {
+        background-color: #1e1e2f;
+        padding: 12px;
+        border-radius: 8px;
+        overflow-x: auto;
+        margin-top: 10px;
+        white-space: pre-wrap;
+      }
+
+      ul#examples {
+        margin-top: 10px;
+        list-style-type: "💬 ";
+      }
+
+      .quiz-block {
+        margin-top: 20px;
+        padding: 12px;
+        background-color: #1e1e2f;
+        border-radius: 8px;
+      }
+
+      .quiz-block label {
+        display: block;
+        margin: 5px 0;
+      }
+
+      #submit-btn {
+        margin-top: 20px;
+        padding: 12px 20px;
+        background-color: #5d3fd3;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      #submit-btn:hover {
+        background-color: #7f58f5;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>📘 Тренажёр</h1>
+      <nav><a href="grammar.html" class="back-home">← Назад к уровням</a></nav>
+    </header>
+
+    <main>
+      <section id="grammar-content">
+        <h2 id="grammar-name">Загрузка...</h2>
+        <p id="explanation"></p>
+
+        <h3>📐 Структура:</h3>
+        <pre id="structure"></pre>
+
+        <h3>📖 Примеры:</h3>
+        <ul id="examples"></ul>
+
+        <h3>🧩 Мини-тест:</h3>
+        <div id="quiz"></div>
+        <button id="submit-btn" onclick="checkQuiz()">Проверить ответы</button>
+      </section>
+    </main>
+
+    <footer>
+      <p style="text-align: center; color: #aaa">© 2025 IT-English Assistant</p>
+    </footer>
+
+    <script>
+      function getParam(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+      }
+
+      const file = getParam("file");
+      if (file) {
+        fetch("data/" + file)
+          .then((res) => res.json())
+          .then((data) => {
+            document.getElementById("grammar-name").textContent = data.grammar;
+            document.getElementById("explanation").textContent =
+              data.explanation;
+            document.getElementById("structure").textContent = JSON.stringify(
+              data.structure,
+              null,
+              2
+            );
+
+            const examplesList = document.getElementById("examples");
+            examplesList.innerHTML = "";
+            data.examples.forEach((ex) => {
+              const li = document.createElement("li");
+              li.textContent = ex;
+              examplesList.appendChild(li);
+            });
+
+            const quizContainer = document.getElementById("quiz");
+            quizContainer.innerHTML = "";
+            data.quiz.forEach((q, index) => {
+              const block = document.createElement("div");
+              block.classList.add("quiz-block");
+              block.innerHTML = `<p><strong>${index + 1}. ${
+                q.question
+              }</strong></p>`;
+              q.options.forEach((option) => {
+                const id = `q${index}_${option}`;
+                block.innerHTML += `
+                <label for="${id}">
+                  <input type="radio" name="q${index}" id="${id}" value="${option}" />
+                  ${option}
+                </label>`;
+              });
+              quizContainer.appendChild(block);
+            });
+          })
+          .catch((err) => {
+            document.getElementById("grammar-content").innerHTML =
+              "Ошибка загрузки файла.";
+            console.error(err);
+          });
+      }
+
+      function checkQuiz() {
+        fetch("data/" + file)
+          .then((res) => res.json())
+          .then((data) => {
+            let score = 0;
+            data.quiz.forEach((q, i) => {
+              const selected = document.querySelector(
+                `input[name="q${i}"]:checked`
+              );
+              if (selected && selected.value === q.answer) {
+                score++;
+              }
+            });
+            alert(`Ваш результат: ${score} из ${data.quiz.length}`);
+          });
+      }
+    </script>
+  </body>
+</html>

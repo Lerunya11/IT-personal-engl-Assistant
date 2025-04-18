@@ -1,0 +1,22 @@
+{
+  "grammar": "Relative Clauses",
+  "explanation": "Используются для добавления информации о существительном.",
+  "structure": "noun + who/that/which + clause",
+  "examples": [
+    "The developer who fixed the bug is on vacation.",
+    "This is the tool that we use daily.",
+    "The book which I borrowed was great."
+  ],
+  "quiz": [
+    {
+      "question": "The engineer ___ fixed the issue was promoted.",
+      "options": ["who", "which", "where"],
+      "answer": "who"
+    },
+    {
+      "question": "This is the platform ___ helps analysts.",
+      "options": ["that", "who", "whose"],
+      "answer": "that"
+    }
+  ]
+}

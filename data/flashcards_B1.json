@@ -1,0 +1,353 @@
+[
+  {
+    "word": "deploy",
+    "translation": "развернуть (программу)",
+    "example": "We will deploy the update tonight.",
+    "category": "devops",
+    "level": "B1"
+  },
+  {
+    "word": "rollback",
+    "translation": "откат изменений",
+    "example": "We had to perform a rollback after the crash.",
+    "category": "devops",
+    "level": "B1"
+  },
+  {
+    "word": "mockup",
+    "translation": "макет",
+    "example": "The designer shared a homepage mockup.",
+    "category": "design",
+    "level": "B1"
+  },
+  {
+    "word": "repository",
+    "translation": "репозиторий",
+    "example": "Push the code to the GitHub repository.",
+    "category": "git",
+    "level": "B1"
+  },
+  {
+    "word": "dataset",
+    "translation": "набор данных",
+    "example": "We trained the model on a large dataset.",
+    "category": "data",
+    "level": "B1"
+  },
+  {
+    "word": "insights",
+    "translation": "аналитические выводы",
+    "example": "This dashboard provides key user insights.",
+    "category": "analytics",
+    "level": "B1"
+  },
+  {
+    "word": "query",
+    "translation": "запрос (в базе данных)",
+    "example": "Write an SQL query to select active users.",
+    "category": "sql",
+    "level": "B1"
+  },
+  {
+    "word": "filter",
+    "translation": "фильтр / фильтровать",
+    "example": "You can filter the results by date.",
+    "category": "bi",
+    "level": "B1"
+  },
+  {
+    "word": "pivot table",
+    "translation": "сводная таблица",
+    "example": "Use a pivot table to summarize the data.",
+    "category": "excel",
+    "level": "B1"
+  },
+  {
+    "word": "automation",
+    "translation": "автоматизация",
+    "example": "We use Python scripts for automation.",
+    "category": "python",
+    "level": "B1"
+  },
+  {
+    "word": "refactor",
+    "translation": "рефакторить (улучшать код)",
+    "example": "He refactored the code to improve performance.",
+    "category": "development",
+    "level": "B1"
+  },
+  {
+    "word": "touchpoint",
+    "translation": "точка взаимодействия с пользователем",
+    "example": "Each touchpoint should feel consistent.",
+    "category": "ux",
+    "level": "B1"
+  },
+  {
+    "word": "visualization",
+    "translation": "визуализация",
+    "example": "We use bar charts for data visualization.",
+    "category": "analytics",
+    "level": "B1"
+  },
+  {
+    "word": "merge",
+    "translation": "объединить (данные, ветки)",
+    "example": "We merged the branches into main.",
+    "category": "git",
+    "level": "B1"
+  },
+  {
+    "word": "badge",
+    "translation": "значок / бейдж",
+    "example": "New messages are marked with a red badge.",
+    "category": "ui",
+    "level": "B1"
+  },
+  {
+    "word": "tooltip",
+    "translation": "всплывающая подсказка",
+    "example": "Add a tooltip to explain this button.",
+    "category": "ui",
+    "level": "B1"
+  },
+  {
+    "word": "parse",
+    "translation": "разбирать, парсить данные",
+    "example": "The script parses JSON from the API.",
+    "category": "python",
+    "level": "B1"
+  },
+  {
+    "word": "Jupyter Notebook",
+    "translation": "блокнот Jupyter",
+    "example": "Run this cell in your Jupyter Notebook.",
+    "category": "python",
+    "level": "B1"
+  },
+  {
+    "word": "aggregate",
+    "translation": "агрегировать, объединять данные",
+    "example": "The dashboard aggregates sales data weekly.",
+    "category": "analytics",
+    "level": "B1"
+  },
+  {
+    "word": "standard deviation",
+    "translation": "стандартное отклонение",
+    "example": "The standard deviation shows how spread out the values are.",
+    "category": "statistics",
+    "level": "B1"
+  },
+  {
+    "word": "hover state",
+    "translation": "состояние при наведении",
+    "example": "The hover state should change the buttons color.",
+    "category": "ui",
+    "level": "B1"
+  },
+  {
+    "word": "modal window",
+    "translation": "модальное окно",
+    "example": "The login modal window appears after clicking.",
+    "category": "interface",
+    "level": "B1"
+  },
+  {
+    "word": "endpoint",
+    "translation": "конечная точка API",
+    "example": "This endpoint returns a list of all users.",
+    "category": "api",
+    "level": "B1"
+  },
+  {
+    "word": "placeholder",
+    "translation": "текст-заполнитель",
+    "example": "Use a relevant placeholder in the input field.",
+    "category": "ui",
+    "level": "B1"
+  },
+  {
+    "word": "badge",
+    "translation": "бейдж, значок статуса",
+    "example": "The badge indicates unread messages.",
+    "category": "interface",
+    "level": "B1"
+  },
+
+  {
+    "word": "loop",
+    "translation": "цикл",
+    "example": "Use a loop to go through all rows.",
+    "category": "python",
+    "level": "B1"
+  },
+  {
+    "word": "boolean",
+    "translation": "логическое значение",
+    "example": "The variable returns a boolean: true or false.",
+    "category": "python",
+    "level": "B1"
+  },
+  {
+    "word": "condition",
+    "translation": "условие",
+    "example": "Use if statements to check the condition.",
+    "category": "python",
+    "level": "B1"
+  },
+  {
+    "word": "real-time data",
+    "translation": "данные в реальном времени",
+    "example": "The dashboard updates with real-time data.",
+    "category": "bi",
+    "level": "B1"
+  },
+  {
+    "word": "token",
+    "translation": "токен (ключ доступа)",
+    "example": "You need an access token to use this API.",
+    "category": "security",
+    "level": "B1"
+  },
+  {
+    "word": "authentication",
+    "translation": "аутентификация",
+    "example": "Two-factor authentication is required.",
+    "category": "security",
+    "level": "B1"
+  },
+  {
+    "word": "resizable",
+    "translation": "изменяемый по размеру",
+    "example": "The window is resizable on all sides.",
+    "category": "interface",
+    "level": "B1"
+  },
+  {
+    "word": "error log",
+    "translation": "журнал ошибок",
+    "example": "Check the error log for details.",
+    "category": "debug",
+    "level": "B1"
+  },
+  {
+    "word": "trend line",
+    "translation": "линия тренда",
+    "example": "The trend line shows the growth over time.",
+    "category": "analytics",
+    "level": "B1"
+  },
+  {
+    "word": "data frame",
+    "translation": "табличная структура (DataFrame)",
+    "example": "Use pandas DataFrame for data processing.",
+    "category": "python",
+    "level": "B1"
+  },
+  {
+    "word": "drop-down",
+    "translation": "выпадающий список",
+    "example": "Choose your country from the drop-down.",
+    "category": "ui",
+    "level": "B1"
+  },
+  {
+    "word": "merge datasets",
+    "translation": "объединить наборы данных",
+    "example": "We need to merge customer data and orders.",
+    "category": "data",
+    "level": "B1"
+  },
+  {
+    "word": "cleaning",
+    "translation": "очистка данных",
+    "example": "Data cleaning is the first step in analysis.",
+    "category": "data",
+    "level": "B1"
+  },
+  {
+    "word": "null values",
+    "translation": "пустые значения",
+    "example": "Handle null values before training the model.",
+    "category": "data",
+    "level": "B1"
+  },
+  {
+    "word": "outlier",
+    "translation": "выброс (в данных)",
+    "example": "Remove outliers to improve accuracy.",
+    "category": "statistics",
+    "level": "B1"
+  },
+  {
+    "word": "usability",
+    "translation": "удобство использования",
+    "example": "We improved the usability on mobile.",
+    "category": "ux",
+    "level": "B1"
+  },
+  {
+    "word": "interactive chart",
+    "translation": "интерактивный график",
+    "example": "Clicking on the pie updates the interactive chart.",
+    "category": "analytics",
+    "level": "B1"
+  },
+  {
+    "word": "custom function",
+    "translation": "пользовательская функция",
+    "example": "Create a custom function for processing.",
+    "category": "python",
+    "level": "B1"
+  },
+  {
+    "word": "slice",
+    "translation": "срез данных",
+    "example": "We viewed a slice by region and year.",
+    "category": "bi",
+    "level": "B1"
+  },
+  {
+    "word": "clarify",
+    "translation": "уточнять",
+    "example": "Let me clarify the next step.",
+    "category": "communication",
+    "level": "B1"
+  },
+  {
+    "word": "follow-up",
+    "translation": "дополнительное обращение / уточнение",
+    "example": "We sent a follow-up after the meeting.",
+    "category": "communication",
+    "level": "B1"
+  },
+  {
+    "word": "alignment",
+    "translation": "согласование",
+    "example": "We need alignment before moving on.",
+    "category": "teamwork",
+    "level": "B1"
+  },
+  {
+    "word": "feedback loop",
+    "translation": "петля обратной связи",
+    "example": "Build a feedback loop with real users.",
+    "category": "ux",
+    "level": "B1"
+  },
+  {
+    "word": "launch",
+    "translation": "запуск (продукта)",
+    "example": "The product launch is planned for Q3.",
+    "category": "project",
+    "level": "B1"
+  },
+  {
+    "word": "track",
+    "translation": "отслеживать",
+    "example": "We track engagement through metrics.",
+    "category": "analytics",
+    "level": "B1"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "grammar": "Present Simple",
+  "explanation": "Используется для описания регулярных действий и фактов.",
+  "structure": "Subject + Verb (s/es)",
+  "examples": ["She works in tech.", "I study every day."],
+  "quiz": [
+    {
+      "question": "He ___ to work at 9am.",
+      "options": ["go", "goes", "going"],
+      "answer": "goes"
+    },
+    {
+      "question": "They ___ coffee in the morning.",
+      "options": ["drink", "drinks", "drinking"],
+      "answer": "drink"
+    }
+  ]
+}

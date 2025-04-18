@@ -1,0 +1,22 @@
+{
+  "grammar": "Modal Verbs",
+  "explanation": "Модальные глаголы выражают возможность, необходимость или разрешение.",
+  "structure": "Modal + base verb",
+  "examples": [
+    "You must wear a helmet.",
+    "Can I help you?",
+    "We should check the code again."
+  ],
+  "quiz": [
+    {
+      "question": "You ___ (must/may) submit it today.",
+      "options": ["must", "may", "should"],
+      "answer": "must"
+    },
+    {
+      "question": "___ I open the window?",
+      "options": ["Can", "Must", "Should"],
+      "answer": "Can"
+    }
+  ]
+}

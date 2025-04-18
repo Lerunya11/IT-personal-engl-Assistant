@@ -1,0 +1,34 @@
+{
+  "A1": {
+    "devices": {
+      "title": "Устройства",
+      "vocab": [
+        { "en": "computer", "ru": "компьютер" },
+        { "en": "keyboard", "ru": "клавиатура" },
+        { "en": "mouse", "ru": "мышь" }
+      ],
+      "phrases": [
+        { "en": "Turn on the computer.", "ru": "Включи компьютер." },
+        { "en": "Type on the keyboard.", "ru": "Печатай на клавиатуре." }
+      ],
+      "examples": ["My computer is slow.", "Where is the mouse?"],
+      "task": "Назови 3 устройства вокруг себя на английском"
+    }
+  },
+  "B1": {
+    "teamwork": {
+      "title": "Работа в команде",
+      "vocab": [
+        { "en": "team", "ru": "команда" },
+        { "en": "collaboration", "ru": "сотрудничество" },
+        { "en": "respect", "ru": "уважение" }
+      ],
+      "phrases": [
+        { "en": "Let's collaborate!", "ru": "Давайте сотрудничать!" },
+        { "en": "Respect your teammates.", "ru": "Уважайте своих коллег." }
+      ],
+      "examples": ["We worked well as a team.", "Respect builds trust."],
+      "task": "Напиши 2 предложения про работу в команде"
+    }
+  }
+}

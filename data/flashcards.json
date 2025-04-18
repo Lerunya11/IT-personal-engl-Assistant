@@ -1,0 +1,17 @@
+[
+  {
+    "word": "frontend",
+    "translation": "фронтенд (пользовательский интерфейс)",
+    "example": "I work on the frontend using React."
+  },
+  {
+    "word": "backend",
+    "translation": "бэкенд (серверная часть)",
+    "example": "The backend is built with Node.js."
+  },
+  {
+    "word": "database",
+    "translation": "база данных",
+    "example": "We use PostgreSQL for our database."
+  }
+]

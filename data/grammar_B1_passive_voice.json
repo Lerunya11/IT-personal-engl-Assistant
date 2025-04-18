@@ -1,0 +1,34 @@
+{
+  "grammar": "Passive Voice",
+  "explanation": "Фокус на действии, а не на том, кто его выполняет.",
+  "structure": "Subject + to be + past participle",
+  "examples": [
+    "The code was reviewed yesterday.",
+    "The app is being developed now.",
+    "The website was updated yesterday.",
+    "The emails are sent every day.",
+    "The bug has been fixed."
+  ],
+  "quiz": [
+    {
+      "question": "The bug ___ fixed.",
+      "options": ["was", "is", "are"],
+      "answer": "was"
+    },
+    {
+      "question": "The report ___ sent this morning.",
+      "options": ["was", "were", "be"],
+      "answer": "was"
+    },
+    {
+      "question": "The app ___ (test) by QA.",
+      "options": ["is tested", "tested", "is testing"],
+      "answer": "is tested"
+    },
+    {
+      "question": "The report ___ (write) yesterday.",
+      "options": ["was written", "was wrote", "is written"],
+      "answer": "was written"
+    }
+  ]
+}

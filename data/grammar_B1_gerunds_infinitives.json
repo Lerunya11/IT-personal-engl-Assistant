@@ -1,0 +1,22 @@
+{
+  "grammar": "Gerunds vs Infinitives",
+  "explanation": "После некоторых глаголов используется герундий (V+ing), после других — инфинитив (to + V).",
+  "structure": "enjoy + V-ing, want + to + V",
+  "examples": [
+    "I enjoy coding.",
+    "She wants to learn Python.",
+    "They suggested meeting earlier."
+  ],
+  "quiz": [
+    {
+      "question": "He enjoys ___ (read) about AI.",
+      "options": ["reading", "to read", "read"],
+      "answer": "reading"
+    },
+    {
+      "question": "They decided ___ (cancel) the call.",
+      "options": ["to cancel", "cancelling", "cancel"],
+      "answer": "to cancel"
+    }
+  ]
+}

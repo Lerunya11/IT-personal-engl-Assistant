@@ -1,0 +1,18 @@
+{
+  "grammar": "Basic Questions",
+  "explanation": "Простые вопросы с do/does.",
+  "structure": "Do/Does + Subject + Verb",
+  "examples": ["Do you like Python?", "Does she work remotely?"],
+  "quiz": [
+    {
+      "question": "___ you speak English?",
+      "options": ["Do", "Does", "Did"],
+      "answer": "Do"
+    },
+    {
+      "question": "___ he use GitHub?",
+      "options": ["Does", "Do", "Did"],
+      "answer": "Does"
+    }
+  ]
+}

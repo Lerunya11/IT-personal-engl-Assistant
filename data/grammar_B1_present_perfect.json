@@ -1,0 +1,22 @@
+{
+  "grammar": "Present Perfect",
+  "explanation": "Используется для выражения действия, которое произошло в неопределённый момент в прошлом и имеет результат в настоящем.",
+  "structure": "have/has + past participle",
+  "examples": [
+    "She has finished the report.",
+    "I have never been to London.",
+    "They have just left the office."
+  ],
+  "quiz": [
+    {
+      "question": "We ___ (finish) the task already.",
+      "options": ["finished", "have finished", "has finished"],
+      "answer": "have finished"
+    },
+    {
+      "question": "He ___ (not see) that movie yet.",
+      "options": ["hasn't seen", "didn't see", "hasn't saw"],
+      "answer": "hasn't seen"
+    }
+  ]
+}

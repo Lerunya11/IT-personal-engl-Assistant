@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📝 Карточки слов — IT-English</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero-header">
+      <img src="images/library-2.jpeg" alt="Library" class="header-bg" />
+      <div class="hero-header-content">
+        <h1>📝 Карточки слов</h1>
+        <nav class="hero-nav">
+          <a href="index.html">🏠 Домой</a>
+          <a href="word.html">🎯 Слово дня</a>
+          <a href="phrase.html">🧠 Фраза дня</a>
+          <a href="topics.html">📚 Темы</a>
+          <a href="quiz.html">🧩 Тест</a>
+          <a href="grammar.html">📘 Грамматика</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <img
+        src="images/dictionary-lila.jpg"
+        alt="Dictionary"
+        class="side-image"
+      />
+
+      <div class="card" id="card">
+        <h2 id="word">Загрузка...</h2>
+        <p><strong>Перевод:</strong> <span id="translation"></span></p>
+        <p><strong>Пример:</strong> <em id="example"></em></p>
+
+        <div class="actions">
+          <button onclick="speakWord()">🔊 Озвучить</button>
+          <button onclick="nextCard()">➡️ Следующее слово</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>📘 Изучай термины каждый день — и прокачай словарь на максимум!</p>
+    </footer>
+
+    <script>
+      let words = [];
+      let currentIndex = 0;
+
+      function loadFlashcards() {
+        fetch("data/flashcards_B1.json")
+          .then((response) => response.json())
+          .then((data) => {
+            words = data;
+            currentIndex = 0;
+            displayCard();
+          });
+      }
+
+      function displayCard() {
+        const card = words[currentIndex];
+        document.getElementById("word").textContent = card.word;
+        document.getElementById("translation").textContent = card.translation;
+        document.getElementById("example").textContent = card.example;
+      }
+
+      function nextCard() {
+        currentIndex = (currentIndex + 1) % words.length;
+        displayCard();
+      }
+
+      function speakWord() {
+        const utterance = new SpeechSynthesisUtterance(
+          words[currentIndex].word
+        );
+        utterance.lang = "en-US";
+        speechSynthesis.speak(utterance);
+      }
+
+      loadFlashcards();
+    </script>
+  </body>
+</html>

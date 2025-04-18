@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📚 Темы — IT-English Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero-header">
+      <img src="images/library-2.jpeg" alt="Library Header" class="header-bg" />
+      <div class="hero-header-content">
+        <h1>📚 Темы по уровням</h1>
+        <nav class="hero-nav">
+          <a href="index.html">🏠 Домой</a>
+          <a href="word.html">🎯 Слово дня</a>
+          <a href="phrase.html">🧠 Фраза дня</a>
+          <a href="flashcards.html">📝 Карточки</a>
+          <a href="quiz.html">🧩 Тест</a>
+          <a href="grammar.html">📘 Грамматика</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <section class="level-selection">
+        <h2>Выбери свой уровень:</h2>
+        <div class="level-buttons">
+          <button onclick="loadTopics('A1')">A1</button>
+          <button onclick="loadTopics('A2')">A2</button>
+          <button onclick="loadTopics('B1')">B1</button>
+          <button onclick="loadTopics('B2')">B2</button>
+          <button onclick="loadTopics('C1')">C1</button>
+        </div>
+      </section>
+
+      <section class="topics-container">
+        <h2>Темы:</h2>
+        <ul id="topic-list" class="topic-list"></ul>
+        <img
+          src="images/dictionary-lila.jpg"
+          alt="Dictionary"
+          class="side-image"
+        />
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 IT-English Assistant • Учи, практикуй, общайся 💜</p>
+    </footer>
+
+    <script>
+      function loadTopics(level) {
+        fetch(`data/topics_${level}.json`)
+          .then((response) => response.json())
+          .then((data) => {
+            const list = document.getElementById("topic-list");
+            list.innerHTML = "";
+            data.forEach((topic) => {
+              const li = document.createElement("li");
+              li.innerHTML = `
+                <strong>📌 ${topic.title}</strong><br />
+                <em>📖 ${
+                  topic.description || "Описание скоро будет."
+                }</em><br /><br />
+              `;
+              list.appendChild(li);
+            });
+          })
+          .catch((err) => {
+            console.error("Ошибка загрузки тем:", err);
+            document.getElementById("topic-list").innerHTML =
+              "<li>Темы не найдены для выбранного уровня.</li>";
+          });
+      }
+    </script>
+  </body>
+</html>

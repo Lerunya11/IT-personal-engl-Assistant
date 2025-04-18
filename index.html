@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT-English Assistant</title>
+
+    <!-- Основной стиль -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Стиль чат-бота -->
+    <link
+      rel="stylesheet"
+      href="https://chatbot.gitcommitt.com/assets/widget/style.css"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>💜 IT-English Assistant</h1>
+      <p class="subtitle">
+        Учим английский с удовольствием: дома, вместе, каждый день!
+      </p>
+      <button id="theme-toggle" title="Сменить тему">🌙 / 🔆</button>
+    </header>
+
+    <main class="menu-grid">
+      <a href="word.html" class="menu-btn"
+        >🎯 Слово дня <span>учим по одному</span></a
+      >
+      <a href="phrase.html" class="menu-btn"
+        >🧠 Фраза дня <span>говорим уверенно</span></a
+      >
+      <a href="flashcards.html" class="menu-btn"
+        >📝 Карточки <span>повторение — мать</span></a
+      >
+      <a href="topics.html" class="menu-btn">📚 Темы <span>по уровням</span></a>
+      <a href="quiz.html" class="menu-btn"
+        >🧩 Мини-тест <span>закрепим знание</span></a
+      >
+      <a href="progress.html" class="menu-btn"
+        >📈 Прогресс <span>отслеживай рост</span></a
+      >
+    </main>
+
+    <footer>
+      <p>🌒 Сделано с душой для себя и семьи • IT-English • 2025</p>
+    </footer>
+
+    <!-- Скрипт переключения темы -->
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("light-theme");
+        localStorage.setItem(
+          "theme",
+          document.body.classList.contains("light-theme") ? "light" : "dark"
+        );
+      });
+
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-theme");
+      }
+    </script>
+
+    <!-- Чат-бот: скрипты -->
+    <script type="module" src="./main.js"></script>
+    <script src="https://chatbot.gitcommitt.com/assets/widget/loader-snippet.js"></script>
+    <script>
+      const scriptElement = document.createElement("script");
+      scriptElement.src = `https://chatbot.gitcommitt.com/assets/widget/chat-widget.umd.js?v=${
+        Math.random() * 1000000
+      }`;
+      document.body.appendChild(scriptElement);
+    </script>
+  </body>
+</html>

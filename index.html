@@ -1,69 +1,102 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT-English Assistant</title>
-
-    <!-- Основной стиль -->
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Стиль чат-бота -->
     <link
+      href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap"
       rel="stylesheet"
-      href="https://chatbot.gitcommitt.com/assets/widget/style.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
     />
   </head>
   <body>
+    <!-- Переключатель темы -->
+    <button id="theme-toggle" aria-label="Переключить тему">🌓</button>
+
+    <!-- Шапка -->
     <header class="site-header">
-      <h1>💜 IT-English Assistant</h1>
-      <p class="subtitle">
-        Учи английский с удовольствием: дома, вместе, каждый день!
-      </p>
-      <button id="theme-toggle" title="Сменить тему">🌙 / 🔆</button>
+      <div class="header-overlay">
+        <h2 class="site-title">IT-English Assistant</h2>
+        <h1 class="welcome-text">WELCOME</h1>
+      </div>
     </header>
 
-    <main>
+    <!-- Меню -->
+    <main class="menu-container">
       <section class="menu-grid">
-        <a href="word.html" class="menu-btn">🦋<span>Слово дня</span></a>
-        <a href="phrase.html" class="menu-btn">🧠<span>Фраза дня</span></a>
-        <a href="flashcards.html" class="menu-btn">🔑<span>Карточки</span></a>
-        <a href="topics.html" class="menu-btn">📚<span>Темы</span></a>
-        <a href="quiz.html" class="menu-btn">🧩<span>Мини-тест</span></a>
-        <a href="progress.html" class="menu-btn">📈<span>Прогресс</span></a>
+        <a href="grammar.html" class="menu-card">
+          <img src="images/icon-grammar.png" alt="Грамматика" />
+          <span>Грамматика</span>
+        </a>
+        <a href="cards.html" class="menu-card">
+          <img src="images/icon-cards.png" alt="Карточки" />
+          <span>Карточки</span>
+        </a>
+        <a href="trainer.html" class="menu-card">
+          <img src="images/icon-trainer.png" alt="Тренажёр" />
+          <span>Тренажёр</span>
+        </a>
+        <a href="quiz.html" class="menu-card">
+          <img src="images/icon-quiz.png" alt="Минитесты" />
+          <span>Минитесты</span>
+        </a>
+        <a href="progress.html" class="menu-card">
+          <img src="images/icon-progress.png" alt="Прогресс" />
+          <span>Прогресс</span>
+        </a>
+        <a href="word.html" class="menu-card">
+          <img src="images/icon-word.png" alt="Слово дня" />
+          <span>Слово дня</span>
+        </a>
+        <a href="dictionary.html" class="menu-card">
+          <img src="images/icon-dictionary.png" alt="Словарь терминов" />
+          <span>Словарь терминов</span>
+        </a>
+        <a href="phrase.html" class="menu-card">
+          <img src="images/icon-phrase.png" alt="Фраза дня" />
+          <span>Фраза дня</span>
+        </a>
       </section>
     </main>
+    <section class="scroll-message">
+      <div class="scroll-container">
+        <p class="scroll-text">
+          "Consistency and curiosity are your greatest allies in learning. Let
+          each word become a brick in the castle of your knowledge."<br />
+          <span class="translation"
+            >("Последовательность и любопытство — твои лучшие союзники в
+            обучении. Пусть каждое слово станет кирпичиком в замке твоих
+            знаний.")</span
+          >
+        </p>
+      </div>
+    </section>
 
-    <footer>
+    <!-- Футер -->
+    <footer class="site-footer">
       <p>🌒 Сделано с душой и любовью для себя и семьи • IT-English • 2025</p>
     </footer>
 
-    <!-- Скрипт переключения темы -->
     <script>
-      const toggleBtn = document.getElementById("theme-toggle");
-
-      toggleBtn.addEventListener("click", () => {
-        document.body.classList.toggle("light-theme");
-        localStorage.setItem(
-          "theme",
-          document.body.classList.contains("light-theme") ? "light" : "dark"
+      const toggle = document.getElementById("theme-toggle");
+      toggle.addEventListener("click", () => {
+        const html = document.documentElement;
+        html.setAttribute(
+          "data-theme",
+          html.dataset.theme === "light" ? "dark" : "light"
         );
       });
-
-      if (localStorage.getItem("theme") === "light") {
-        document.body.classList.add("light-theme");
-      }
-    </script>
-
-    <!-- Чат-бот: скрипты -->
-    <script type="module" src="./main.js"></script>
-    <script src="https://chatbot.gitcommitt.com/assets/widget/loader-snippet.js"></script>
-    <script>
-      const scriptElement = document.createElement("script");
-      scriptElement.src = `https://chatbot.gitcommitt.com/assets/widget/chat-widget.umd.js?v=${
-        Math.random() * 1000000
-      }`;
-      document.body.appendChild(scriptElement);
     </script>
   </body>
 </html>
